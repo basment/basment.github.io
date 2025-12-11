@@ -7656,7 +7656,7 @@ textarea.form-control-lg {
 }
 
 .mb-0 {
-  font-size: 4rem;
+  font-size:2rem;
   margin-bottom: 0 !important;
   margin-top: 0 !important;
 }
@@ -10892,14 +10892,14 @@ p.lead {
 }
 
 #bottomNav {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 #bottomNav .nav-link {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-  font-size: 1.25rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1rem;
 }
 @media (min-width: 992px) {
   /* Bottom navbar styling for large screens */
@@ -11009,7 +11009,7 @@ section.resume-section .resume-section-content {
   }
 }
 
-#about .lead.mb-5 {
+.lead.mb-5 {
   font-size: 1.65rem;
   line-height: 1.5;
 }
@@ -11094,3 +11094,45 @@ hr.m-0 {
   background-color: #dfd0b8;
   color: #343a40;
 }
+
+/* Layout: text + image side by side */
+.interests-layout {
+  display: flex;
+  align-items: flex-start;  /* top-align paragraph and image */
+  gap: 0rem;                /* space between text and image */
+}
+
+/* Make the text take most of the width */
+.interests-layout .lead {
+  flex: 1;
+}
+
+/* Image wrapper on the right */
+.interests-image-wrapper {
+  flex-shrink: 0;
+  margin-top: 1rem;
+  margin-left: 4rem;
+  /* remove that big left margin */
+}
+
+/* Circular image styling */
+.interests-image {
+  margin:0% 0% 0% 0%;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0.35rem 1rem rgba(0, 0, 0, 0.35);
+  margin-top: 30rem;
+}
+
+.resume-section-content a {
+  color: #F3E8DF;
+  text-decoration: none;
+}
+
+.resume-section-content a:hover {
+  color: #f8e4c5;
+  text-decoration: underline;
+}
+
